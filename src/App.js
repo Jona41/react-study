@@ -4,7 +4,7 @@ import Home from './home'
 import { useState } from 'react';
 
 function App() {
-  const [name, setName] = useState({name:'龙军林'});
+  const [name, setName] = useState({name:'龙军林4444'});
   console.log(name,setName);
   return (
     <div className="App">
