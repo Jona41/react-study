@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './home'
+import { useState } from 'react';
 
 function App() {
+  const [name, setName] = useState({name:'龙军林'});
+  console.log(name,setName);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload111.
         </p>
         <a
           className="App-link"
@@ -17,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+      <Home {...name} />
       </header>
     </div>
   );
